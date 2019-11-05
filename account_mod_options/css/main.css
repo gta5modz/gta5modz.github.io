@@ -1893,7 +1893,7 @@ body.menu-is-open {
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
-.header-view-cart {
+.view-cart {
   width: 48px;
   height: 45px;
   line-height: 45px;
@@ -1905,7 +1905,7 @@ body.menu-is-open {
   color: #FFFFFF;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  position: fixed;
+  position: 50px, 50px;
   right: 8rem;
   top: 30px;
 }
