@@ -1894,8 +1894,8 @@ body.menu-is-open {
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
 .view-cart {
-  width: 48px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   line-height: 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -1907,7 +1907,7 @@ body.menu-is-open {
   transition: all 0.5s ease-in-out;
   position: fixed;
   right: 15rem;
-  top: 30px;
+  top: 35px;
 }
 
 
