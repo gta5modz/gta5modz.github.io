@@ -1905,8 +1905,8 @@ body.menu-is-open {
   color: #FFFFFF;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  position: 50px, 50px;
-  right: 8rem;
+  position: fixed;
+  right: 15rem;
   top: 30px;
 }
 
