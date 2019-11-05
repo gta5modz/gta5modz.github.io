@@ -1893,6 +1893,25 @@ body.menu-is-open {
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
+.header-view-cart {
+  width: 48px;
+  height: 45px;
+  line-height: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  color: #FFFFFF;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  right: 8rem;
+  top: 30px;
+}
+
+
+
 .header-menu-toggle {
   width: 48px;
   height: 45px;
