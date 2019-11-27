@@ -58,7 +58,9 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-
+.step1{
+    background-color: rgba(0, 0, 0, 0.7);
+}
  .hidden{
   visibility: hidden;
   display: none;
