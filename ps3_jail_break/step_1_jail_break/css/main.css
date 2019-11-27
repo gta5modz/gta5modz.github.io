@@ -832,6 +832,7 @@ legend {
   line-height: 1.714;
   color: #FFFFFF;
   display: block;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 input[type="checkbox"],
