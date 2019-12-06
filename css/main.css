@@ -63,6 +63,7 @@
   visibility: hidden;
   display: none;
  }
+
 html {
   font-size: 10px;
 }
@@ -1686,6 +1687,11 @@ body.menu-is-open {
 /* ------------------------------------------------------------------- 
  * ## main navigation 
  * ------------------------------------------------------------------- */
+.header-nav__button{
+    text-transform: lowercase; 
+}
+
+
 .header-nav {
   z-index: 600;
   font-size: 1.6rem;
