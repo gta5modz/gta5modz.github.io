@@ -2142,6 +2142,17 @@ body.menu-is-open {
   color: #9c9c9c;
 }
 
+.home-content h4 {
+margin-top: 1.2rem;
+font-family: "Nunito Sans", sans-serif;
+font-weight: 300;
+font-size: 2.8rem;
+line-height: 1.342;
+font-style: normal;
+color: #9c9c9c;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
 .home-content__main {
   position: relative;
   text-align: center;
