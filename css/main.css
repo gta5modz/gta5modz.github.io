@@ -63,7 +63,6 @@
   visibility: hidden;
   display: none;
  }
-
 html {
   font-size: 10px;
 }
@@ -518,8 +517,7 @@ p,
 ul,
 ol,
 dl,
-form
-option,
+form,
 .video-container,
 .ss-custom-select {
   margin-bottom: 3rem;
@@ -727,7 +725,7 @@ option,
  *
  * ------------------------------------------------------------------- */
 fieldset {
-  border: none;
+  border: all;
 }
 
 input[type="email"],
@@ -744,12 +742,11 @@ select {
   padding: 1.5rem 2.4rem;
   border: 0;
   outline: none;
-  color: rgba(255, 255, 255, 0.7);
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(12, 145, 29, 0.69);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -772,18 +769,15 @@ select {
   vertical-align: middle;
 }
 
-.ss-custom-select select option  {
+.ss-custom-select select option {
   padding-left: 2rem;
   padding-right: 2rem;
   color: #0c911d;
-  background: #077d19;
+  background: #0c911d;
 }
 
-option select{
-  background-color: : #0c911d;
-}
 .ss-custom-select select::-ms-expand {
-  display: none;
+  display: all;
 }
 
 .ss-custom-select::after {
@@ -826,7 +820,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  color: #FFFFFF;
+  color:rbga #FFFFFF;
 }
 
 label,
@@ -1687,11 +1681,6 @@ body.menu-is-open {
 /* ------------------------------------------------------------------- 
  * ## main navigation 
  * ------------------------------------------------------------------- */
-.header-nav__button{
-    text-transform: lowercase; 
-}
-
-
 .header-nav {
   z-index: 600;
   font-size: 1.6rem;
@@ -1904,6 +1893,25 @@ body.menu-is-open {
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
+.view-cart {
+  width: 30px;
+  height: 30px;
+  line-height: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  color: #FFFFFF;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  right: 15rem;
+  top: 35px;
+}
+
+
+
 .header-menu-toggle {
   width: 48px;
   height: 45px;
@@ -2146,6 +2154,17 @@ body.menu-is-open {
   line-height: 1.342;
   font-style: normal;
   color: #9c9c9c;
+}
+
+.home-content h4 {
+margin-top: 1.2rem;
+font-family: "Nunito Sans", sans-serif;
+font-weight: 300;
+font-size: 2.8rem;
+line-height: 1.342;
+font-style: normal;
+color: #9c9c9c;
+background-color: rgba(0, 0, 0, 0.7);
 }
 
 .home-content__main {
