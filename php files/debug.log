@@ -1,0 +1,15 @@
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\main.cc:771: clear log
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\main.cc:772: launcher version 2.3
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\main.cc:777: hen version 3.0.1
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\vsh_memory.h:2373: CHooking::m_EbootToc: 0x6F5558
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\vsh_memory.h:2374: CHooking::m_getGameProcessIdOpd: 0x6D7C00
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\vsh_memory.h:2375: CHooking::m_getGameProcessIdPrt: 0x71F420
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\vsh_memory.h:2377: CHooking::m_sysPrxLoadModuleFunc: 0x617A54
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\vsh_memory.h:2378: CHooking::m_sysPrxUnloadModuleFunc: 0x617F68
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\main.cc:790: successfully found patterns
+2020-09-19 20:17:49 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\main.cc:822: key exists
+2020-09-19 20:17:50 DEBUG C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\main.cc:940: zip doesnt need an update
+2020-09-19 20:17:50 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\main.cc:1009: console does not have CCAPI
+2020-09-19 20:19:06 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\gtav_process.h:543: applying patches for GTAV
+2020-09-19 20:19:06 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\gtav_process.h:549: loading semjases main sprx
+2020-09-19 20:19:06 INFO  C:\Users\USER\Documents\Visual Studio 2019\Projects\Leverage\Leverage\gtav_process.h:712: finished applying patches for GTAV
