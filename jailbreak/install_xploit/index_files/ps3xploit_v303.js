@@ -137,8 +137,8 @@ var gadget_mod16_addr=0;
 var ipf1_addr=0; 
 var ipf2_addr=0; 
 var xtra_data;var stack_frame;var jump_2;var jump_1;var xtra_data_addr;var stack_frame_addr;var jump_2_addr;var jump_1_addr;
-var fail_msg_frag=hr+"<h1><b>Exploit Initialization FAILED!</h1><h2><span style='color:#000000;'><a href=\"javascript:window.location.reload();\">Refresh this page</a> & try again...</span></b></h2>";
-var progress_msg_frag1=hr+"<h1><b>Exploit Initialization..."+br+"<span style='color:#000000;'>Progress: ";
+var fail_msg_frag=hr+"<h1><b>Exploit Initialization FAILED!</h1><h2><span style='color:#FFFFFF;'><a href=\"javascript:window.location.reload();\">Refresh this page</a> & try again...</span></b></h2>";
+var progress_msg_frag1=hr+"<h1><b>Exploit Initialization..."+br+"<span style='color:#FFFFFF;'>Progress: ";
 var progress_msg_frag2='%, please wait...</span></b></h1>';
 
 
