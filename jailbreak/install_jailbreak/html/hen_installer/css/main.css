@@ -115,6 +115,7 @@ color: #ffffff;
 font-style: normal;
 text-rendering: optimizeLegibility;
 margin-bottom: 2.1rem;
+background-color: #000000
 }
 h3, .h03, h4, .h04 {
 margin-bottom: 1.8rem;
@@ -1181,7 +1182,7 @@ max-width: 60rem;
 }
 
 #intro {
-background: #14181E url(../images/intro-bg.jpg) no-repeat center;
+background: #14181E url(../images/intro-bg.png) no-repeat center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 background-size: cover;

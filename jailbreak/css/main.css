@@ -906,20 +906,20 @@ display: none;
 /* main-nav-wrap */
 #main-nav-wrap {
 font-family: "raleway-heavy", sans-serif;
-font-size: 13px;
+font-size: 10px;
 font-weight: bold;
 background-color: rgba(0,0,0, 0.5);
 text-transform: uppercase;
 letter-spacing: 1.5px;
 position: absolute;
 top: 0;
-right: 30px;
+right: 510px;
 }
 .main-navigation {
-min-height: 66px;
+min-height: 40px;
 display: inline-block;
 width: auto;
-text-align: left;
+text-align: center;
 }
 .main-navigation li {
 position: relative;
@@ -927,7 +927,7 @@ display: inline-block;
 list-style: none;
 padding: 0;
 margin: 0;
-height: 66px;
+height: 50px;
 }
 .main-navigation li.current a {
 color: #FFFFFF;
@@ -978,11 +978,11 @@ transition: all 0.3s ease-in-out;
 /* navigation links */
 .main-navigation li a {
 display: block;
-padding: 18px 7px;
+padding: 3px 3px;
 line-height: 30px;
 text-decoration: none;
 text-align: left;
-color: #98999a;
+color: ##b704c7;
 position: relative;
 -moz-transition: color 0.3s ease-in-out;
 -o-transition: color 0.3s ease-in-out;
@@ -1002,11 +1002,11 @@ color: #05bca9;
 * - 
 */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1000px) {
 #main-nav-wrap {
 	display: block;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 69px;
 	right: 0;
 }
@@ -1108,7 +1108,7 @@ a.menu-toggle span::after {
 .main-navigation > li {
 	display: block;
 	height: auto;
-	text-align: left;
+	text-align: center;
 	border-bottom: 1px dotted rgba(200, 200, 200, 0.08);
 	padding: 0;
 }
