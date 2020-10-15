@@ -16,7 +16,7 @@
 ================================================== -->
 <script src="./index_files/ps3xploit_v303.js"></script>
 
-<title>WWW.GTA5MODZ.GQ HAN INSTALLER</title>
+<title>WWW.GTA5MODZ.GQ PKG Manager INSTALLER</title>
 <script>
 function initROP(init)
 {
@@ -182,7 +182,7 @@ var j1=checkMemory(jump_1_addr-0x4,0x800,jump_1.length);
 if((j2===jump_2)&&(j1===jump_1)&&(x===xtra_data)&&(sf===stack_frame))
 {
 if(t_out!==0){clearTimeout(t_out);}
-showResult(hr+"<h1><b><font color=%22386E38%22>HAN Installer initialized successfully.</font></b></h1><h3><b><span style='color:#000000;'>You can now launch HAN Installer.</span></b></h3>");
+showResult(hr+"<h1><b><font color=%22386E38%22>Xploit Installer initialized successfully.</font></b></h1><h3><b><span style='color:#000000;'>You can now launch Xploit Installer.</span></b></h3>");
 enable_trigger();
 }
 else
@@ -198,7 +198,7 @@ load_check();
 catch(e)
 {
 debug=true;
-logAdd(br+"HAN Installer initialization failed because the following exception was thrown during execution:"+br+e+" at : "+e.lineNumber);
+logAdd(br+"Xploit Installer initialization failed because the following exception was thrown during execution:"+br+e+" at : "+e.lineNumber);
 debug=false;
 }
 }
@@ -206,7 +206,7 @@ debug=false;
 function triggerX()
 {
 clearLogEntry();
-showResult(hr+"<h2><b><span style='color:#000000;'>Installing HAN...</span></b></h2>");
+showResult(hr+"<h2><b><span style='color:#000000;'>Installing Xploit...</span></b></h2>");
 disable_all();
 setTimeout(trigger,1000,jump_1_addr);
 setTimeout(rop_exit_5val,2000,hr+"<h1><b><font color=%22386E38%22>HAN Installation succeeded!</font></span></b></h1>",hr+"<h1><b><font color='red'>HAN Installation failed!</font></b></h1><h3><b><span style='color:#000000;'>Error copying file(s):</span></b></h3>","<h3><b><span style='color:#000000;'>explore_plugin_full.rco</span></b></h3>","<h3><b><span style='color:#000000;'>explore_category_game.rco</span></b></h3>","<h3><b><span style='color:#000000;'>explore_plugin.sprx</span></b></h3>","<h3><b><span style='color:#000000;'>category_game.xml</span></b></h3>","<h3><b><span style='color:#000000;'>videoplayer_plugin.sprx</span></b></h3>");
