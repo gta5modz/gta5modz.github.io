@@ -58,12 +58,13 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-
- .hidden{
+.p1{
   visibility: hidden;
   display: none;
- }
+}
+
 html {
+
   font-size: 10px;
 }
 
@@ -725,8 +726,13 @@ form,
  *
  * ------------------------------------------------------------------- */
 fieldset {
-  border: all;
+  border: none;
 }
+
+ #lol{
+  visibility: hidden;
+  display: none;
+ }
 
 input[type="email"],
 input[type="number"],
@@ -742,11 +748,12 @@ select {
   padding: 1.5rem 2.4rem;
   border: 0;
   outline: none;
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
-  background: rgba(12, 145, 29, 0.69);
+  background: rgba(255, 255, 255, 0.05);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -772,12 +779,12 @@ select {
 .ss-custom-select select option {
   padding-left: 2rem;
   padding-right: 2rem;
-  color: #0c911d;
-  background: #0c911d;
+  color: #666666;
+  background: #FFFFFF;
 }
 
 .ss-custom-select select::-ms-expand {
-  display: all;
+  display: none;
 }
 
 .ss-custom-select::after {
@@ -820,7 +827,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  color:rbga #FFFFFF;
+  color: #FFFFFF;
 }
 
 label,
@@ -1893,25 +1900,6 @@ body.menu-is-open {
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
-.view-cart {
-  width: 30px;
-  height: 30px;
-  line-height: 45px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: .5rem;
-  color: #FFFFFF;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  position: fixed;
-  right: 15rem;
-  top: 35px;
-}
-
-
-
 .header-menu-toggle {
   width: 48px;
   height: 45px;
@@ -2156,17 +2144,6 @@ body.menu-is-open {
   color: #9c9c9c;
 }
 
-.home-content h4 {
-margin-top: 1.2rem;
-font-family: "Nunito Sans", sans-serif;
-font-weight: 300;
-font-size: 2.8rem;
-line-height: 1.342;
-font-style: normal;
-color: #9c9c9c;
-background-color: rgba(0, 0, 0, 0.7);
-}
-
 .home-content__main {
   position: relative;
   text-align: center;
@@ -2222,7 +2199,7 @@ background-color: rgba(0, 0, 0, 0.7);
 }
 
 .home-content__video .video-link:hover .video-icon {
-  background-color: #0c911d;
+  background-color: #6b3792;
 }
 
 /* ------------------------------------------------------------------- 
