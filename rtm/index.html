@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://paradisesprx.net/rtm/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise SPRX</title>
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/css">
+    <link rel="stylesheet" href="./index_files/animate.min.css">
+    <link rel="stylesheet" href="./index_files/styles.min.css">
+<link rel="apple-touch-icon" sizes="57x57" href="https://paradisesprx.net/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://paradisesprx.net/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://paradisesprx.net/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://paradisesprx.net/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://paradisesprx.net/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://paradisesprx.net/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://paradisesprx.net/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://paradisesprx.net/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://paradisesprx.net/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://paradisesprx.net/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://paradisesprx.net/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://paradisesprx.net/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://paradisesprx.net/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://paradisesprx.net/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style type="text/css">.mx-tip-panel:focus{outline:0;} 
+ .mx_keyword{line-height:20px; color:#333333; font-size:14px; letter-spacing: 0.2px;font-family:PingFangSC-Semibold;}
+.mx-scrollbar::-webkit-scrollbar{width:8px;height:1px;}
+.mx-scrollbar{overflow-y:auto; max-height:380px; }
+.mx-scrollbar::-webkit-scrollbar-thumb{border-radius:4px; background: #C0C0C0;}
+.mx-scrollbar::-webkit-scrollbar-track{border-radius:4px; background: #eeeeee;}
+.maxthon_tip{background-color:white; border:none;} .maxthon_tip:active{background-color: #E6F4FF;border:1px solid #449EFB; } .maxthon_tip:hover{background-color:#E6F4FF; border:1px solid #449EFB;}
+</style></head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand" href="https://paradisesprx.net/home.html">Paradise SPRX</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="https://paradisesprx.net/gta.html">GTA </a></li>
+                        <li role="presentation"><a href="https://paradisesprx.net/cod.html">COD </a></li>
+                        <li role="presentation"><a href="https://paradisesprx.net/news.html">News </a></li>
+                        <li role="presentation"><a href="https://paradisesprx.net/chat.html">Social </a></li>
+                        <li role="presentation"><a href="http://paradisesprx.net/user">User Panel</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    <div class="container" style="padding:20px">
+        <h1>RTM&nbsp;<small>(<a target="_blank" href="https://pastebin.com/raw/F21jYSHZ">Tutorial</a>)</small></h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>RTM Key</h3><input id="RTMKey" type="text" placeholder="Get it from the modder. It is 4 characters long" maxlength="4" minlength="4" class="input-sm" style="width:100%;"><button class="btn btn-default btn-block" type="button" onclick="connect()">Connect</button>
+                <hr>
+                <h3>Send Message To host</h3><input id="dialog-msg" type="text" placeholder="Message" maxlength="100" minlength="0" class="input-sm" style="width:100%;"><button class="btn btn-default btn-block" type="button" onclick="messageDialog()">Send Message</button>
+                <hr>
+                <h3>Player 1 Name</h3><input id="player1" type="text" placeholder="Type &#39;ALL&#39; for all players" maxlength="32" minlength="0" class="input-sm" style="width:100%;">
+                <h3>Player 2 Name</h3><input id="player2" type="text" placeholder="Type &#39;ALL&#39; for all players" maxlength="32" minlength="0" class="input-sm" style="width:100%;">
+                <hr>
+                <h3>Resources<br><a href="https://pastebin.com/raw/8TLM0M2t" target="_blank">Vehicle List</a><br><a href="http://docs.ragepluginhook.net/html/62951c37-a440-478c-b389-c471230ddfc5.htm" target="_blank">Animation List</a><br><a href="http://gtaforums.com/topic/792877-list-of-over-100-coordinates-more-comming/" target="_blank">Coordinate List</a><br>
+                    <a href="https://pastebin.com/raw/XQStYCe8" target="_blank">Object List</a><br><a href="http://paradisesprx.net/rtminfo.html" target="_blank">More Info On This Service</a></h3><br></div>
+            <div class="col-md-4">
+                <h3>Mods </h3><button class="btn btn-default btn-block" type="button" onclick="tpP12P2()">Teleport Player 1 to Player 2</button><button class="btn btn-default btn-block" type="button" onclick="killP1Anon()">Kill Player 1 Anonymously</button><button class="btn btn-default btn-block" type="button" onclick="p2killp1()">Make Player 2 Kill Player 1</button><button class="btn btn-default btn-block" type="button" onclick="moneyDropOn()">Player 1 Money Drop On</button><button class="btn btn-default btn-block" type="button" onclick="moneyDropOff()">Player 1 Money Drop Off</button><button class="btn btn-default btn-block" type="button" onclick="toggleMoneyDrop()">Toggle Player 1 Money Drop
+</button><button class="btn btn-default btn-block" type="button" onclick="rmWantedLevel()">Player 1 Remove Wanted Level
+</button><button class="btn btn-default btn-block" type="button" onclick="kickPlayer1()">Player 1 Kick
+</button>
+                <hr><input type="number" id="XCOORD" style="width:100%" placeholder="X"><input type="number" id="YCOORD" style="width:100%" placeholder="Y"><input type="number" id="ZCOORD" style="width:100%" placeholder="Z"><button class="btn btn-default btn-block" type="button" onclick="teleportPlayer1ToCoord()">Teleport Player 1 To Coordinate</button>
+                <hr>
+            </div>
+            <div class="col-md-4"><input type="number" id="RANK" style="width:100%" placeholder="Rank 0 to 8000"><button class="btn btn-default btn-block" type="button" onclick="setPlayer1Rank()">Set Player 1 Rank</button><button class="btn btn-default btn-block" type="button" onclick="onehundredMil()">Player 1 Give 100 Million
+</button>
+                <hr><input id="OBJECT_NAME_SPAWN_ON_PLAYER_1" type="text" placeholder="Object Name" maxlength="100" minlength="0" class="input-sm" style="width:100%;"><button class="btn btn-default btn-block" type="button" onclick="spawnObjectOnPlayer1()">Spawn Object On Player 1</button>
+                <hr><input id="VEHICLE_NAME" type="text" placeholder="Vehicle Name" maxlength="100" minlength="0" class="input-sm" style="width:100%;"><button class="btn btn-default btn-block" type="button" onclick="spawnVehicleOnPlayer1()">Spawn Vehicle On Player 1</button>
+                <hr><input id="ANIM_DICT" type="text" placeholder="Animation Dictionary" maxlength="100" minlength="0" class="input-sm" style="width:100%;"><input id="ANIM_NAME" type="text" placeholder="Animation Name" maxlength="100" minlength="0" class="input-sm" style="width:100%;"><button class="btn btn-default btn-block" type="button" onclick="animationOnPlayer1()">Start Animation On Player 1</button><button class="btn btn-default btn-block" type="button" onclick="stopPlayer1Animation()">Stop Player 1 Animation</button></div>
+        </div>
+    </div>
+    </div><script type="text/javascript" src="./index_files/rtmlib.js"></script>
+
+<script>
+    
+    
+    function getValue(idOfElement) {
+	   return document.getElementById(idOfElement).value;
+    }
+    
+    function player1() {
+        var name = getValue("player1");
+        if (name.length < 1) {
+            alert("Player 1 name not set! Please type a name in the Player 1 text box!");
+        }
+        return name;
+    }
+    
+    function player2() {
+        var name = getValue("player2");
+        if (name.length < 1) {
+            alert("Player 2 name not set! Please type a name in the Player 2 text box!");
+        }
+        return name;
+    }
+    
+    function isNumber(x) {
+        return !isNaN(x);
+    }
+    
+    function connect() {
+	   setRTMKey(getValue('RTMKey'));
+	   nullFunction();
+    }
+    
+    function messageDialog() {
+        dialog(getValue('dialog-msg'));
+    }
+    
+function tpP12P2() {
+	teleportPlayerToPlayer(player1(), player2());
+}
+function killP1Anon() {
+	killPlayerAnonymous(player1());
+}
+function p2killp1() {
+	killPlayer(player1(), player2());
+}
+function moneyDropOn() {
+	moneyDrop(player1(), 1);
+}
+function moneyDropOff() {
+	moneyDrop(player1(), 0);
+}
+function toggleMoneyDrop() {
+	moneyDrop(player1(), 2);
+}
+function teleportPlayer1ToCoord() {
+    teleportPlayer(player1(), getValue("XCOORD"), getValue("YCOORD"), getValue("ZCOORD"));
+}
+function setPlayer1Rank() {
+    setPlayerRank(player1(),getValue("RANK"));
+    alert('Only click once per person!');
+}
+    
+function spawnObjectOnPlayer1() {
+    spawnObjectOnPlayerWithOffset(getValue("OBJECT_NAME_SPAWN_ON_PLAYER_1"), 0, 0, 0, player1());
+}
+function spawnVehicleOnPlayer1() {
+    spawnVehicle(player1(),getValue("VEHICLE_NAME"));
+}
+function animationOnPlayer1() {
+    playerAnimation(player1(),getValue("ANIM_DICT"),getValue("ANIM_NAME"));
+}
+function stopPlayer1Animation() {
+    clearTask(player1());
+}
+function rmWantedLevel() {
+    removeWantedLevel(player1());
+}
+function kickPlayer1() {
+    kickPlayer(player1());
+}
+function customStat(name, statName, value) {
+    executeFunction(14, name, statName, value);
+}
+function onehundredMil() {
+    customStat(player1(), "CASH_GIFT",100000000);
+    sendText(player1(),"Join a new lobby for $");
+}
+
+</script>
+
+    <script src="./index_files/jquery.min.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/script.min.js"></script>
+
+
+</body></html>
