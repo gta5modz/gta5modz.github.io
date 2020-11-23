@@ -1,176 +1,257 @@
-
 <!DOCTYPE html>
-<html>
-
+<html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTA 5 MODZ</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://paradisesprx.net/assets/css/styles.min.css">
-<link rel="apple-touch-icon" sizes="57x57" href="https://paradisesprx.net/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="https://paradisesprx.net/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="https://paradisesprx.net/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="https://paradisesprx.net/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="https://paradisesprx.net/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="https://paradisesprx.net/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="https://paradisesprx.net/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="https://paradisesprx.net/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://paradisesprx.net/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="https://paradisesprx.net/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://paradisesprx.net/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="https://paradisesprx.net/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="https://paradisesprx.net/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="https://paradisesprx.net/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+
+<!--- basic page needs
+================================================== -->
+<meta charset="utf-8">
+<title>GTA 5 MODZ | Modding Options</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- mobile specific metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/vendor.css">
+<link rel="stylesheet" href="../css/main.css">
+
+<!-- script
+================================================== -->
+<script src="../js/modernizr.js"></script>
+
+<!-- favicons
+================================================== -->
+<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+<link rel="icon" href="../favicon.png" type="image/png">
+
 </head>
 
-<body>
-    <div>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand" href="../home.html">Paradise SPRX</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li role="presentation"><a href="../gta.html">GTA </a></li>
-                        <li role="presentation"><a href="../cod.html">COD </a></li>
-                        <li role="presentation"><a href="../news.html">News </a></li>
-                        <li role="presentation"><a href="../chat.html">Social </a></li>
-                        <li role="presentation"><a href="http://paradisesprx.net/user">User Panel</a></li>
-                    </ul>
-            </div>
-    </div>
-    </nav>
-    <div class="container" style="padding:20px">
-        <h1>RTM&nbsp;<small>(<a target="_blank" href="https://pastebin.com/raw/F21jYSHZ">Tutorial</a>)</small></h1>
-        <div class="row">
-            <div class="col-md-4">
-                <h3>RTM Key</h3><input id="RTMKey" type="text" placeholder="Get it from the modder. It is 4 characters long" maxlength="4" minlength="4" class="input-sm" style="width:100%;" /><button class="btn btn-default btn-block" type="button" onclick="connect()">Connect</button>
-                <hr>
-                <h3>Send Message To host</h3><input id="dialog-msg" type="text" placeholder="Message" maxlength="100" minlength="0" class="input-sm" style="width:100%;" /><button class="btn btn-default btn-block" type="button" onclick="messageDialog()">Send Message</button>
-                <hr>
-                <h3>Player 1 Name</h3><input id="player1" type="text" placeholder="Type 'ALL' for all players" maxlength="32" minlength="0" class="input-sm" style="width:100%;" />
-                <h3>Player 2 Name</h3><input id="player2" type="text" placeholder="Type 'ALL' for all players" maxlength="32" minlength="0" class="input-sm" style="width:100%;" />
-                <hr>
-                <h3>Resources<br><a href="https://pastebin.com/raw/8TLM0M2t" target="_blank">Vehicle List</a><br><a href="http://docs.ragepluginhook.net/html/62951c37-a440-478c-b389-c471230ddfc5.htm"
-                        target="_blank">Animation List</a><br><a href="http://gtaforums.com/topic/792877-list-of-over-100-coordinates-more-comming/" target="_blank">Coordinate List</a><br>
-                    <a
-                        href="https://pastebin.com/raw/XQStYCe8" target="_blank">Object List</a><br><a href="http://paradisesprx.net/rtminfo.html" target="_blank">More Info On This Service</a></h3><br></div>
-            <div class="col-md-4">
-                <h3>Mods </h3><button class="btn btn-default btn-block" type="button" onclick="tpP12P2()">Teleport Player 1 to Player 2</button><button class="btn btn-default btn-block" type="button" onclick="killP1Anon()">Kill Player 1 Anonymously</button><button class="btn btn-default btn-block" type="button" onclick="p2killp1()">Make Player 2 Kill Player 1</button><button class="btn btn-default btn-block" type="button" onclick="moneyDropOn()">Player 1 Money Drop On</button><button class="btn btn-default btn-block" type="button" onclick="moneyDropOff()">Player 1 Money Drop Off</button><button class="btn btn-default btn-block" type="button" onclick="toggleMoneyDrop()">Toggle Player 1 Money Drop
-</button><button class="btn btn-default btn-block" type="button" onclick="rmWantedLevel()">Player 1 Remove Wanted Level
-</button><button class="btn btn-default btn-block" type="button" onclick="kickPlayer1()">Player 1 Kick
-</button>
-                <hr><input type="number" id="XCOORD" style="width:100%" placeholder="X"><input type="number" id="YCOORD" style="width:100%" placeholder="Y"><input type="number" id="ZCOORD" style="width:100%" placeholder="Z"><button class="btn btn-default btn-block" type="button" onclick="teleportPlayer1ToCoord()">Teleport Player 1 To Coordinate</button>
-                <hr>
-            </div>
-            <div class="col-md-4"><input type="number" id="RANK" style="width:100%" placeholder="Rank 0 to 8000"><button class="btn btn-default btn-block" type="button" onclick="setPlayer1Rank()">Set Player 1 Rank</button><button class="btn btn-default btn-block" type="button" onclick="onehundredMil()">Player 1 Give 100 Million
-</button>
-                <hr><input id="OBJECT_NAME_SPAWN_ON_PLAYER_1" type="text" placeholder="Object Name" maxlength="100" minlength="0" class="input-sm" style="width:100%;" /><button class="btn btn-default btn-block" type="button" onclick="spawnObjectOnPlayer1()">Spawn Object On Player 1</button>
-                <hr><input id="VEHICLE_NAME" type="text" placeholder="Vehicle Name" maxlength="100" minlength="0" class="input-sm" style="width:100%;" /><button class="btn btn-default btn-block" type="button" onclick="spawnVehicleOnPlayer1()">Spawn Vehicle On Player 1</button>
-                <hr><input id="ANIM_DICT" type="text" placeholder="Animation Dictionary" maxlength="100" minlength="0" class="input-sm" style="width:100%;" /><input id="ANIM_NAME" type="text" placeholder="Animation Name" maxlength="100" minlength="0" class="input-sm" style="width:100%;" /><button class="btn btn-default btn-block" type="button" onclick="animationOnPlayer1()">Start Animation On Player 1</button><button class="btn btn-default btn-block" type="button" onclick="stopPlayer1Animation()">Stop Player 1 Animation</button></div>
-        </div>
-    </div>
-    </div><script type="text/javascript" src="https://paradisesprx.net/rtm/rtmlib.js" ></script>
 
-<script>
-    
-    
-    function getValue(idOfElement) {
-       return document.getElementById(idOfElement).value;
-    }
-    
-    function player1() {
-        var name = getValue("player1");
-        if (name.length < 1) {
-            alert("Player 1 name not set! Please type a name in the Player 1 text box!");
-        }
-        return name;
-    }
-    
-    function player2() {
-        var name = getValue("player2");
-        if (name.length < 1) {
-            alert("Player 2 name not set! Please type a name in the Player 2 text box!");
-        }
-        return name;
-    }
-    
-    function isNumber(x) {
-        return !isNaN(x);
-    }
-    
-    function connect() {
-       setRTMKey(getValue('RTMKey'));
-       nullFunction();
-    }
-    
-    function messageDialog() {
-        dialog(getValue('dialog-msg'));
-    }
-    
-function tpP12P2() {
-    teleportPlayerToPlayer(player1(), player2());
-}
-function killP1Anon() {
-    killPlayerAnonymous(player1());
-}
-function p2killp1() {
-    killPlayer(player1(), player2());
-}
-function moneyDropOn() {
-    moneyDrop(player1(), 1);
-}
-function moneyDropOff() {
-    moneyDrop(player1(), 0);
-}
-function toggleMoneyDrop() {
-    moneyDrop(player1(), 2);
-}
-function teleportPlayer1ToCoord() {
-    teleportPlayer(player1(), getValue("XCOORD"), getValue("YCOORD"), getValue("ZCOORD"));
-}
-function setPlayer1Rank() {
-    setPlayerRank(player1(),getValue("RANK"));
-    alert('Only click once per person!');
-}
-    
-function spawnObjectOnPlayer1() {
-    spawnObjectOnPlayerWithOffset(getValue("OBJECT_NAME_SPAWN_ON_PLAYER_1"), 0, 0, 0, player1());
-}
-function spawnVehicleOnPlayer1() {
-    spawnVehicle(player1(),getValue("VEHICLE_NAME"));
-}
-function animationOnPlayer1() {
-    playerAnimation(player1(),getValue("ANIM_DICT"),getValue("ANIM_NAME"));
-}
-function stopPlayer1Animation() {
-    clearTask(player1());
-}
-function rmWantedLevel() {
-    removeWantedLevel(player1());
-}
-function kickPlayer1() {
-    kickPlayer(player1());
-}
-function customStat(name, statName, value) {
-    executeFunction(14, name, statName, value);
-}
-function onehundredMil() {
-    customStat(player1(), "CASH_GIFT",100000000);
-    sendText(player1(),"Join a new lobby for $");
-}
+<body id="top">
 
-</script>
+<!-- preloader
+================================================== -->
+<div id="preloader">
+<div id="loader" class="dots-jump">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://paradisesprx.net/assets/js/script.min.js"></script>
+<!-- header
+================================================== -->
+<header class="s-header">
+
+<div class="header-logo">
+<a class="site-logo" href="../">
+<img src="../images/logo.png" alt="Homepage">
+</a>
+</div> <!-- end header-logo -->
+
+<nav class="header-nav">
+
+<a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+<h3>Navigate to</h3>
+
+<div class="header-nav__content">
+
+<ul class="header-nav__list">
+<li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+<li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+</ul>
+
+<p>
+	
+</p>
+
+<ul class="header-nav__social">
+<li>
+<a href="#0"><i class="fab fa-facebook"></i></a>
+</li>
+<li>
+<a href="#0"><i class="fab fa-twitter"></i></a>
+</li>
+<li>
+<a href="#0"><i class="fab fa-instagram"></i></a>
+</li>
+<li>
+<a href="#0"><i class="fab fa-behance"></i></a>
+</li>
+<li>
+<a href="#0"><i class="fab fa-dribbble"></i></a>
+</li>
+</ul>
+
+</div> <!-- end header-nav__content -->
+
+</nav> <!-- end header-nav -->
+
+<a class="header-menu-toggle" href="#0">
+<span class="header-menu-icon"></span>
+</a>
+
+</header> <!-- end s-header -->
+
+
+
+
+
+<!-- services
+================================================== -->
+<section id='services' class="s-services target-section darker">
+
+<div class="row section-header bit-narrow" data-aos="fade-up">
+<div class="col-full">
+<h3 class="subhead">Remote Modding</h3>
+<h1 class="display-1">
+We take pride in what we do. Our services are designed to help 
+with any possible mod option there is, scroll down to begin.
+</h1>
+</div>
+</div> <!-- end section-header -->
+
+<div class="row bit-narrow services block-1-2 block-tab-full">
+
+<div class="col-block item-service" data-aos="fade-up">
+<div class="item-service__icon">
+<i class="icon-star"></i>
+</div>
+<div class="item-service__text">
+<h3 class="item-title">RTM Modding</h3>
+<p><img src="../images/rtm.png">
+Use this option for | <a>Teleport</a> | <a>Kick</a> | <a>Money Drop</a> | <a>Rank</a> <a>Etc</a>...<br><br>
+Scroll Down To Get <a>RTM Code</a> from the chat box below before you click the start button.<br>
+
+<a href="https://paradisesprx.net/rtm/" target="blank" class="btn btn--large">
+Start
+</a>
+</p>
+</div>
+</div>
+
+<div class="col-block item-service" data-aos="fade-up">
+<div class="item-service__icon">
+<i class="icon-star"></i>
+</div>
+<div class="item-service__text">
+<h3 class="item-title">Stat Modding</h3>
+<p><img src="../images/stats.png">
+	This options is mainly used for <a>stats</a> and <a>unlockables</a>.<br><br>
+    Scroll Down To Get <a>RTM Code</a> from the chat box below before you click the start button.<br>
+
+<a href="https://paradisesprx.net/stats/" targer="blank" class="btn btn--large">
+Start
+</a>
+</p>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+</div> <!-- end services -->
+
+</section> <!-- end s-services -->
+
+
+
+
+<!-- contact
+================================================== -->
+<section id="contact" class="s-contact target-section">
+
+<div class="grid-overlay">
+<div></div>
+</div>
+
+<div class="row section-header narrow" data-aos="fade-up">
+<div class="col-full">
+<h3 class="subhead">Request RTM Code</h3>
+<h2 class="subhead">Please log out of chat once you have received your <a>RTM CODE</a>
+</div>
+</div> <!-- end section-header -->
+
+<div class="row contact-main" data-aos="fade-up">
+<div class="col-full">
+<div style="height: 320px;"><div id="rt-0b3ec9b20485a237e76c732aa409c157"></div> <script src="https://rumbletalk.com/client/?6E9m*HRT"></script></div>
+
+
+
+</div>
+</div>
+
+</section> <!-- end s-contact -->
+
+
+<!-- footer
+================================================== -->
+<footer>
+<div class="row">
+<div class="col-full ss-copyright">
+<span>© GTA 5 MODZ 2019</span> 
+<span>Design by <a href="https://gta5modz.github.io/">GTA 5 MODZ</a></span>
+</div>
+</div>
+
+<div class="ss-go-top">
+<a class="smoothscroll" title="Back to Top" href="#top">Back to Top</a>
+</div>
+</footer>
+
+
+<!-- photoswipe background
+================================================== -->
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+<div class="pswp__bg"></div>
+<div class="pswp__scroll-wrap">
+
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+<div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+"Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+"Zoom in/out"></button>
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+"Next (arrow right)"></button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+
+</div>
+
+</div> <!-- end photoSwipe background -->
+
+
+<!-- Java Script
+================================================== -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
 </body>
-
-</html>
