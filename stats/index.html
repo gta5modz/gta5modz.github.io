@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://paradisesprx.net/stats/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise SPRX</title>
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/css">
+    <link rel="stylesheet" href="./index_files/animate.min.css">
+    <link rel="stylesheet" href="./index_files/styles.min.css">
+<link rel="apple-touch-icon" sizes="57x57" href="https://paradisesprx.net/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://paradisesprx.net/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://paradisesprx.net/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://paradisesprx.net/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://paradisesprx.net/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://paradisesprx.net/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://paradisesprx.net/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://paradisesprx.net/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://paradisesprx.net/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://paradisesprx.net/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://paradisesprx.net/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://paradisesprx.net/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://paradisesprx.net/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://paradisesprx.net/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style type="text/css">.mx-tip-panel:focus{outline:0;} 
+ .mx_keyword{line-height:20px; color:#333333; font-size:14px; letter-spacing: 0.2px;font-family:PingFangSC-Semibold;}
+.mx-scrollbar::-webkit-scrollbar{width:8px;height:1px;}
+.mx-scrollbar{overflow-y:auto; max-height:380px; }
+.mx-scrollbar::-webkit-scrollbar-thumb{border-radius:4px; background: #C0C0C0;}
+.mx-scrollbar::-webkit-scrollbar-track{border-radius:4px; background: #eeeeee;}
+.maxthon_tip{background-color:white; border:none;} .maxthon_tip:active{background-color: #E6F4FF;border:1px solid #449EFB; } .maxthon_tip:hover{background-color:#E6F4FF; border:1px solid #449EFB;}
+</style></head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand" href="https://paradisesprx.net/home.html">Paradise SPRX</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="https://paradisesprx.net/gta.html">GTA </a></li>
+                        <li role="presentation"><a href="https://paradisesprx.net/cod.html">COD </a></li>
+                        <li role="presentation"><a href="https://paradisesprx.net/news.html">News </a></li>
+                        <li role="presentation"><a href="https://paradisesprx.net/chat.html">Social </a></li>
+                        <li role="presentation"><a href="http://paradisesprx.net/user">User Panel</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    <div class="container" style="padding:20px">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>RTM Key</h3>
+                <input id="RTMKey" type="text" placeholder="4 characters long" maxlength="4" minlength="4" class="input-sm" style="width:100%;">
+                <button class="btn btn-default btn-block" type="button" onclick="connect()">Connect</button>
+                <p>Get the RTM Key from inside Paradise SPRX in the 'Website RTM' submenu section.</p>
+                <hr>
+                <h3>Player Name To Set Stats On</h3>
+                <input id="player1" type="text" placeholder="Type the player&#39;s name here" maxlength="32" minlength="0" class="input-sm" style="width:100%;">
+                <p>Type 'ALL' to run on all players in the lobby, but it only works on some features on this page.</p>
+                <br>
+                <hr>
+                <p> If the stats are not working on a person, they need to restart their game and re-join for them to work.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Stats </h3>
+                <button class="btn btn-default btn-block" type="button" onclick="setStat(0)">Give All Armour</button>
+<!--<button class="btn btn-default btn-block" type="button" onclick="setStat(1)">Remove Player From Badsport</button>-->
+<button class="btn btn-default btn-block" type="button" onclick="setStat(2)">Give All Camos</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(3)">Clear Player Reports</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(4)">Give Fireworks</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(5)">Set Legit KD Ratio For Player</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(6)">Set Free Rims In LSC For Player</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(7)">Unlock All Hair Types</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(8)">Unlock Heist Rewards</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(9)">Unlock All Purchases In LSC</button>
+<!--<button class="btn btn-default btn-block" type="button" onclick="setStat(10)">Set High Mental State</button>-->
+<!--<button class="btn btn-default btn-block" type="button" onclick="setStat(11)">Reset Mental State</button>-->
+<button class="btn btn-default btn-block" type="button" onclick="setStat(12)">Give Modded Combat Roll</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(23)">Remove Modded Combat Roll</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(13)">Give 999999 RP</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(14)">Unlock All Shirts</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(15)">Set Max Skills</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(16)">Give Infinite Snacks</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(17)">Unlock All Tatoos</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(18)">Unlock All Trophies</button>
+<button class="btn btn-default btn-block" type="button" onclick="setStat(19)">Unlock All Weapons</button>
+
+
+            </div>
+            <div class="col-md-4">
+                <h3>Input Stats</h3>
+                <input id="money" type="text" placeholder="Amount of money to give" maxlength="25" minlength="0" class="input-sm" style="width:100%;">
+                <button class="btn btn-default btn-block" type="button" onclick="giveMoney()">Give Money</button>
+                <button class="btn btn-default btn-block" type="button" onclick="maxMoney()">Give 2.1 Billion</button>
+                <button class="btn btn-default btn-block" type="button" onclick="removeMoney()">Remove 2.1 Billion</button>
+                <p>Max value is 9,223,372,036,854,775,807
+                    <br>They must join a new lobby to receive it
+                    <br>Don't press more than once per person!</p>
+                <hr>
+                <input id="ranktext" type="text" placeholder="Rank 0 through 8000" maxlength="100" minlength="0" class="input-sm" style="width:100%;">
+                <button class="btn btn-default btn-block" type="button" onclick="setRank()">Set Rank</button>
+                <button class="btn btn-default btn-block" type="button" onclick="derank()">Rank 1</button>
+                <button class="btn btn-default btn-block" type="button" onclick="maxrank()">Rank 8000</button>
+                <hr>
+                <h3>Custom Stat</h3>
+                <input id="customStatElement" type="text" placeholder="Stat Name" maxlength="100" minlength="0" class="input-sm" style="width:100%;">
+                <input id="customStatValueElement" type="text" placeholder="Stat Value To Add (number)" maxlength="100" minlength="0" class="input-sm" style="width:100%;">
+                <button class="btn btn-default btn-block" type="button" onclick="setCustomStat()">Add Value To Stat</button>
+                <p>Some stats list: <a href="https://pastebin.com/raw/Fd49xpJ6" target="_blank">here</a></p>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="./index_files/rtmlib.js"></script>
+
+<script>
+    //var jenkins = new Jenkins();
+    
+    function getValue(idOfElement) {
+	   return document.getElementById(idOfElement).value;
+    }
+    
+    function player1() {
+        var name = getValue("player1");
+        if (name.length < 1) {
+            alert("Player name not set! Please type a name in the Player text box!");
+        }
+        return name;
+    }
+    
+    function isNumber(x) {
+        return !isNaN(x);
+    }
+    
+	function setStat(stat) {
+		executeFunction(13, player1(), stat);
+	}
+    
+    function customStat(statName, value) {
+        executeFunction(14, player1(), statName, value);
+    }
+    
+    function setCustomStat() {
+        var statName = getValue('customStatElement');
+        var value = getValue('customStatValueElement');
+        //var hash = jenkins.hash32(statName.toLowerCase());
+        executeFunction(14, player1(), statName, value);
+    }
+    
+    function derank() {
+        customStat("RP_GIFT",-2000000000);
+        alert("Will set after they go to a new lobby, so kick them");
+    }
+    
+    function maxrank() {
+        customStat("RP_GIFT",2000000000);
+        alert("Will set after they go to a new lobby, so kick them");
+    }
+    
+    function giveMoney() {
+        var amt = getValue('money').replace(/,/g, '');
+        console.log(amt);
+        executeFunction(13,player1(),20,amt);
+    }
+    
+    function maxMoney() {
+        executeFunction(13,player1(),20,2147483647);//0x7fffffff
+    }
+    
+    function removeMoney() {
+        executeFunction(13,player1(),22);
+    }
+    
+    function setRank() {
+        var amt = getValue('ranktext').replace(/,/g, '');
+        executeFunction(13,player1(),21,amt);
+    }
+	
+    function connect() {
+	   setRTMKey(getValue('RTMKey'));
+	   nullFunction();
+    }
+
+
+</script>
+    <script src="./index_files/jquery.min.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/script.min.js"></script>
+
+
+</body></html>
